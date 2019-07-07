@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kyu</title>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="background">
+        <header>
+            <!--スマホ版-->
+            <div id="sp-header-position">
+                <div id="sp-logo-wrapper">
+                    <a href="index.html">
+                    <img src="image-materials/logo-image.png" id="sp-logo" alt="ロゴ">
+               </a>
+                </div>
+                <div id="menu-wrapper">
+                    <img src="image-materials/menu-bar-image.png" id="sp-menu" alt="スマホメニュー">
+                    <div id="sp-menu-wrapper">
+                        <a href="index.html">
+                            <p id="top-page-paragraph">TOP&nbsp;PAGE</p>
+                        </a>
+                        <a href="gallery.html">
+                            <p id="gallery-paragraph">GALLERY</p>
+                        </a>
+                        <a href="online-shop.html">
+                            <p id="online-shop-paragraph">ONLINE&nbsp;SHOP</p>
+                        </a>
+                        <a href="contact.html">
+                            <p id="contact-paragraph">CONTACT</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--スマホ版メニューバーここまで-->
+            <!--パソコン版メニュ-->
+            <div id="pc-header-position">
+                <div id="pc-logo-wrapper">
+                    <a href="index.html">
+                    <img src="image-materials/logo-image.png" id="pc-logo" alt="ロゴ">
+                </a>
+                </div>
+                <div id="pc-menu-wrapper">
+                    <a href="index.html">
+                        <p id="pc-top-page-image">TOP&nbsp;PAGE</p>
+                    </a>
+                    <a href="gallery.html">
+                        <p id="pc-gallery-image">GALLERY</p>
+                    </a>
+                    <a href="online-shop.html">
+                        <p id="pc-online-shop-image">ONLINE&nbsp;SHOP</p>
+                    </a>
+                    <a href="contact.html">
+                        <p id="pc-contact-image">CONTACT</p>
+                    </a>
+                </div>
+            </div>
+            <!--パソコン版メニューここまで-->
+        </header>
+        <main id="main-wrapper">
+
+        </main>
+
+        <footer id="video-footer-wrapper">
+            <div class="others-wrapper">
+                <div class="transaction-wrapper">
+                    <a class="transaction-law-text" href="transaction-law.html">
+                        <p>特定商取引法に関する事項</p>
+                    </a>
+                </div>
+                <div class="privacy-wrapper">
+                    <a class="privacy-text" href="privacy.html">
+                        <p>プライバシーポリシー</p>
+                    </a>
+                </div>
+                <div class="term-of-service-wrapper">
+                    <a class="term-of-service-text" href="term-of-service.html">
+                        <p>注意事項</p>
+                    </a>
+                </div>
+            </div>
+            <div class="copy-right-wrapper">
+                <p class="copy-right-paragraph">© 2019 kyu All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!--もともとの設定
+<video id="background-video" src="image-materials/background-movie.mp4" playsinline autoplay muted></video>-->
+    <!--次にやった設定
+      <img srd="image-materials/background-picture.jpg" alt="背景画像">-->
+    <!--<video id="background-video" src="image-materials/background-movie.mp4" autoplay="" muted="" loop="" playsinline="playsinline" preload="none">-->
+
+    
+    <video id="background-video" autoplay muted playsinline>
+    <source  src="image-materials/background-movie.mp4" type="video/mp4">
+</video>
+
+    <script>
+        $(function() {
+            $(document).ready(function() {
+
+                $("#sp-menu").click(function() {
+                    $(this).next().slideToggle();
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>
